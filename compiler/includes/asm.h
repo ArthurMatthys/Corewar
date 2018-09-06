@@ -6,7 +6,7 @@
 /*   By: kevazoul <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/04/17 19:44:03 by kevazoul     #+#   ##    ##    #+#       */
-/*   Updated: 2018/09/03 15:00:49 by nerahmou    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/09/06 15:42:26 by amatthys    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -107,7 +107,7 @@ typedef struct					s_asm
 typedef struct					s_session
 {
 	unsigned int				success:1;
-	int							files_count:4;
+	int							files_count;
 	char						**filenames;
 	t_asm						**asms;
 }								t_session;

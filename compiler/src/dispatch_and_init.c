@@ -6,7 +6,7 @@
 /*   By: kevazoul <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/04/17 19:44:03 by kevazoul     #+#   ##    ##    #+#       */
-/*   Updated: 2018/08/30 21:45:14 by amatthys    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/09/06 15:42:48 by amatthys    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -61,7 +61,7 @@ int				asm_dispatch(t_session *s)
 
 	i = -1;
 	if (!asm_init(s))
-		s->success = 0;
+		return(s->success = 0);
 	while (s->success && ++i < s->files_count)
 		if (!asm_build_header(s->asms[i]) || !asm_process(s->asms[i]))
 			return (s->success = 0);
