@@ -6,7 +6,7 @@ There is two programm in this project:
 - The first one is a compiler. You need to compile a file written in redcode to a binary file.
 - Then you use the binary file as a champion to fight against other champion in a virtual machine.
 
-Techno : C, Git
+Techno : C
 
 Programming method : reverse engineering, shell script (TDD)
 
